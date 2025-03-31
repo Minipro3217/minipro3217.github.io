@@ -3,99 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Why Tolerance/Mina's Modulus</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    min-height: 100%;
-  }
-
-  .container {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    max-width: 800px;
-    width: 100%;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    margin-top: 30px;
-  }
-
-  h1 {
-    font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  .discovery-details {
-    margin-top: 20px;
-    color: #d3d3d3;
-    font-size: 1.2em;
-    line-height: 1.8;
-  }
-
-  .footer {
-    margin-top: 30px;
-    font-size: 1em;
-    color: #aaa;
-  }
-
-  /* Home Button styling */
-  .home-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #555;
-    border: none;
-    padding: 12px;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-button i {
-    font-size: 1.5em;
-  }
-
-  .home-button:hover {
-    background-color: #333;
-  }
-
-  /* Apply styles for both ordered and unordered lists */
-  ol, ul {
-    list-style-type: decimal; /* Treat unordered list like an ordered one */
-    padding-left: 20px;
-    color: #d3d3d3;
-    font-size: 1em;
-  }
-
-  ol li, ul li {
-    margin-bottom: 10px;
-    font-size: 1em;
-    line-height: 1.6;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 10px 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
-  }
-
-  ol li:hover, ul li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
-  }
-</style>
   <!-- Link to Font Awesome for the home icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -119,8 +28,36 @@
         with reasonability can be given, for example "Why are you like this?" has a high why level since "Why" can be asked many times "
         before running out of answers.
         An example of question with low Why Level would be something like "Why was the world created?" where
-        the number of why's asked beyond that will be extremely limited, if 0 why's can be asked then the why level is 0
-        <br>Eg. If Why Tolerance Modulus for person x=0.9 and person y=0.4, when given a single level.. tbc... </p>
+        the number of why's asked with reasonable answers beyond that will be extremely limited, if 0 why's can be asked then the why level is 0
+        <br>General example: If Why Tolerance Modulus for person x = 0.8 and person y = 0.4, and the why
+        level = 65, the number of answers person x
+        can give to why's beyond the first question will be 2 times greater than that of person y 
+        <br>Detailed example: 
+        <br>Question: "Why is grass green"
+        <br>Person y answer: "Because it contains chlorophyll" 
+        <br>Why 1: "Why is chlorophyll green?"</p>
+        <br>Person y answer: "Since the wavelength of light reflects from chlorophyll is green"
+        <br>Why 2: "Why is that so?"
+        <br>Person y answer: "Ask God not me"
+        <br>
+        <br><font size="6">Alternatively</font>
+        <br>
+        <br>Question: "Why is grass green"
+        <br>Person x answer: "Because it contains chlorophyll" 
+        <br>Why 1: "Why is chlorophyll green?"
+        <br>Person x answer: "Since the wavelength of light reflects from chlorophyll is green"
+        <br>Why 2: "Why is that so?"
+        <br>Person x answer: "The molecular structure of chlorophyll causes it to absorb
+        red and blue light but prevents it from absorbing green light causing it to be reflected"
+        <br>Why 3: "Why is the molecular structure of the chlorophyll shaped like that?"
+        <br>Person x answer: "Thats just how it works, now leave me alone!"
+        <br>
+        <br>Since person x has double the Why Tolerance modulus of person y, they can answer double the
+        number of why questions beyond the original questions with reasonable answers 
+        (in this case 2 isntead of 1). The first question does not count since if it had no answer,
+        its why level would be 0 making the why tolerance modulus of the people answering insignificant.
+        <br>A formula to show this relation will be created but a constant might need to be discovered first
+        </p>
     </div>
   </div>
 
