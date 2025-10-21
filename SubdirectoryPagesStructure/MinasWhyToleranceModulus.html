@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZWEMP3HB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYZWEMP3HB');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="substyle.css">
   <title>Why Tolerance/Mina's Modulus</title>
   <!-- Link to Font Awesome for the home icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -54,12 +63,37 @@
         <br>
         <br>Since person x has double the Why Tolerance modulus of person y, they can answer double the
         number of why questions beyond the original questions with reasonable answers 
-        (in this case 2 isntead of 1). The first question does not count since if it had no answer,
-        its why level would be 0 making the why tolerance modulus of the people answering insignificant.
-        <br><b>*A formula to show this relation will be created but a constant might need to be discovered first*</b>
+        (in this case 2 instead of 1). The first question does not count since if it had no answer,
+        its why level would be 0 making the why tolerance modulus of the people answering irrelevant.
+        <br><b>*A formula to show this relation will be created but a constant might need to be compiled first*</b>
+        <div class="more-details">
+          <p>
+            <br>Progress with the formula:
+            <br>𝜏 (lowercase tau in greek) is the symbol for why tolerance
+            <br>𝜏 does change slightly change as age and therefore knowledge of the individual increases
+            but this must cancel out since this change in knowledge, relative to other people with the same change
+            in knowlege means that 𝜏, a value that shows the difference in why tolerance <b>relative</b> to people,
+            must mean the effects of the change eliminate each other
+            <br>This also means that in an overly simplified manner, Knowledge is equal to a constant 
+            (that is also an oversimplification of the factors that affect knowledge) that is specific to each person
+            must be used to calculate the knowledge "factor" of a person. For clarity, let knowledge factor = Φ (Phi), 
+            knowledge = k, age=a. Given that, k must equal ab (k = aΦ). 
+            <br>For the effect of age to cancel out, the a's in the formula must eliminate each other
+            so 𝜏 is proportional to k/a which is equal to aΦ/a
+            <br>So 𝜏 is proportional to knowledge k, the number of valid why answers y, and is inversely proportional to 
+            why level of question L. 
+            <br>therefore: 𝜏 = k/aL = aΦ/aL = Φ/L
+            <br><b>Plan for what is left to do:</b>
+            <ul><li>find how to calculate L</li>
+            <li>Find a way to calculate Φ for a person</li>
+            <li>Find any missing relations for 𝜏</li></ul>
+          </p>
+          <br>
+        </div>
         </p>
     </div>
   </div>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e5e8527432d42be9e8d6862d1a95bf6"}'></script><!-- End Cloudflare Web Analytics -->
 
 </body>
 </html>

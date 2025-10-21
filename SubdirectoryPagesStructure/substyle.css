@@ -1,0 +1,308 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  min-height: 100%;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  max-width: 90%;
+  width: 100%;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  margin: 50px 5%; /* Adds horizontal spacing */
+}
+/* Clean, flat link block */
+.explainer-link {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: inherit; /* Use the parent text color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional subtle separator */
+}
+
+/* Remove background and hover shadow box */
+.explainer-link:hover {
+  background-color: transparent;
+  text-decoration: underline; /* Optional hover effect */
+}
+
+/* Title */
+.explainer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Description */
+.explainer-description {
+  font-size: 0.95em;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.discovery-details {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #d3d3d3;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.discovery-details:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+
+ol li,
+ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+ol li:hover,
+ul li:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #aaa;
+}
+
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #555;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .home-button {
+    top: 10px;
+    left: 10px;
+    padding: 8px;
+    font-size: 1.2em;
+  }
+}
+
+.home-button i {
+  font-size: 1.5em;
+}
+
+.home-button:hover {
+  background-color: #333;
+}
+
+/* Apply styles for ordered and unordered lists */
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  color: #d3d3d3;
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #d3d3d3;
+  font-size: 1em;
+}
+
+/* Fix for nested unordered list inside ordered list */
+ol ul {
+  list-style-type: circle;
+  padding-left: 25px;
+}
+
+/* Generalized More Details Box */
+.more-details {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px; /* Further reduced top padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #d3d3d3;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-top: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.more-details:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+.more-details {
+  background-color: rgba(255, 255, 255, 0.05); /* Softer background */
+  color: #cccccc; /* Dimmer text than bright white */
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* subtle glow */
+}
+
+.more-details ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  list-style-type: disc;
+}
+
+.more-details li {
+  margin-bottom: 6px;
+}
+
+.more-details code {
+  font-family: monospace;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #88f;
+}
+/* Clean, flat link block */
+.explainer-link {
+  display: block;
+  padding: 14px 0;
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keep text using default color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional separator */
+}
+
+/* Remove underline on hover and add slight effect instead */
+.explainer-link:hover {
+  background-color: transparent;
+  text-decoration: none; /* Ensures no underline */
+  color: #ffffff; /* Slight color lift on hover */
+}
+
+/* Title */
+.explainer-title {
+  font-size: 1.4em; /* Slightly bigger */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Description */
+.explainer-description {
+  font-size: 1.05em; /* Slightly bigger */
+  color: #bbbbbb; /* Softer gray than #aaa */
+  margin-top: 4px;
+}
+.content-image {
+  max-width: 100%; /* Makes the image responsive; it won't overflow its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  border-radius: 8px; /* Matches the rounded corners of your other elements */
+  margin-top: 15px; /* Adds some space above the image */
+  margin-bottom: 15px; /* Adds some space below the image */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Adds a light border like your .discovery-item */
+}
+
+@media (max-width: 600px) {
+  /* 1. Make the container take up more screen width on phones */
+  .container {
+    max-width: 95%; /* Use 95% of the screen width instead of 90% */
+    padding: 15px; /* Reduce padding to save space */
+    margin: 20px auto; /* Adjust top/bottom margin and auto-center */
+  }
+
+  /* 2. Adjust the font size of the main content paragraphs */
+  .discovery-details {
+    font-size: 1em; /* Reduced from 1.2em */
+    line-height: 1.6; /* Slight line-height adjustment for readability */
+    padding: 10px 15px; /* Reduced padding */
+  }
+
+  /* 3. Adjust the list item font size inside the discovery-details */
+  ol li,
+  ul li {
+    font-size: 0.9em; /* Reduced from 1em */
+    padding: 8px 10px; /* Reduced padding */
+  }
+
+  /* 4. Adjust heading sizes to be less dominating */
+  h1 {
+    font-size: 2em; /* Reduced from 2.5em */
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* Style to make an image and text display side-by-side */
+.content-side-by-side {
+  display: flex; /* Enable Flexbox layout */
+  align-items: center; /* Vertically center the image and text */
+  gap: 20px; /* Adds space between the image and text */
+  margin: 15px 0; /* Add some vertical space around the block */
+}
+
+/* Styling for the image within the side-by-side container */
+.content-side-by-side .content-image-side {
+  max-width: 35%; /* Make the image take up about a third of the container width */
+  height: auto;
+  flex-shrink: 0; /* Prevents the image from shrinking too much */
+  margin: 0; /* Removes default vertical margins that could break the alignment */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Style for the paragraph within the side-by-side container */
+.content-side-by-side p {
+  margin: 0; /* Remove default paragraph margins */
+  flex-grow: 1; /* Allow the paragraph to take up the remaining width */
+}
+
+/* Media Query to revert to stacking on phones */
+@media (max-width: 700px) {
+  .content-side-by-side {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    align-items: flex-start; /* Align all content to the left */
+    gap: 10px;
+  }
+  .content-side-by-side .content-image-side {
+    max-width: 100%; /* Image takes full width again on mobile */
+  }
+}

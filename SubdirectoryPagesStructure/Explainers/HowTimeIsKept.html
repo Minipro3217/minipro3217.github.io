@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYZWEMP3HB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYZWEMP3HB');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../substyle.css"> 
+  <title>How Time Is Kept - Mina Explainers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <a href="/">
+    <button class="home-button">
+      <i class="fas fa-home"></i> </button>
+  </a>
+
+  <div class="container">
+    <h1>How Time Is Kept</h1>
+    <div class="discovery-details" style="text-align: left;"> <h2>How does time actually work?</h2>
+      
+      <p>Well the second is the base unit of time in the international system of units (the globally agreed upon system for units – except for America cuz America 🤷‍♂️). It is defined as “the duration of 9,192,631,770 periods of the radiation corresponding to the transition between two hyperfine levels of the ground state of the cesium-133 atom”.</p>
+      
+      <p>You obviously you have no clue what that is… so basically some guy called Neil Bohr said that electrons in an atom exist in specific energy levels (this is kinda wrong but it explains it well enough so whatever, the actual explanation doesn’t really exist, they’re just using a weak, inaccurate model). Now electrons cannot be somewhere in the middle, they’re either at energy level 1 or 2 or so on… if they gain the exact energy to go up an energy level they do, if they lose the exact energy to go down an energy level they do, otherwise they just don’t absorb or lose energy. Another thing is that if you shine a light of a certain frequency (the frequency corresponds to its energy) at an electron, the electron gains energy, so it goes up an energy level, it then decides to go back to its lower energy level but energy cannot be created or destroyed so the energy is released as light with a frequency proportional to the energy released (basically the same frequency as that of the light shined at the electron initially). Btw this I called the photoelectric effect (Einstein got noble for that, not relativity somehow)…</p>
+      
+      <p>Guess what, if you shine a light with a specific frequency (9,192,631,770 Hz) at ceasium-133 atoms, the electrons keep gaining and losing energy an therefore radiate light at that exact same frequency (9,192,631,770 Hz)… Guess what again, this is what a second is, the time it takes for electrons in ceasium-133 atoms to oscillate (move back and forth between energy levels) exactly 9,192,631,770 times…</p>
+      
+      <p>Now all of THIS is to define a second</p>
+      
+      <p>Now to count them accurately, you use an atomic clock.</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/EnergyLevels.jpg" alt="EnergyLevels" class="content-image">
+      <h2>How does an atomic clock work?</h2>
+      
+      <h3>Quartz crystals and piezoelectric effect</h3>
+      
+      <p>There is something called the piezoelectric effect (a lot of p’s and a lot of effects, physics I guess 🤷‍♂️). Anyways, it’s just that when you give an electric signal (AC – Alternating Current - at frequency similar to the resonant frequency of the crystal) to a crystal, it vibrates at its resonant frequency (which is kinda the default frequency of the crystal, depending on the physical structure of the crystal), in a way or another this frequency is maintained, but this is to be explained as part of another explainer. Now this vibration then produces an electric current that is exactly the frequency we need (9,192,631,770 Hz in this case). We then produce a current that tells our atomic clock one second has passed. The only reason it remains accurate is for the next part.</p>
+      
+      <p>A laser, of frequency 192,631,770Hz, is shined at Ceasium-133 atoms, the amount of light reflected back indicates how many electrons switched to a diff state from the original (basically when the electrons move up and go back they radiate light, if they don’t move they don’t radiate so no light), this is read by a photodetector (light sensor). This frequency compared to that from the quartz crystal, if it is off by even 1hz it is “recalibrated” to make it vibrate at the exact same frequency, this makes It super accurate, so accurate that it wont be off by a second before the earth is gone (1 second in 300 billion years for the newest clocks).</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/AtomicClockStatic.png" alt="AtomicClockStatic" class="content-image">
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/AtomicClockAnimated.gif" alt="AtomicClockAnimated" class="content-image">
+
+      <p>(They’re a bit complicated if you haven’t noticed)</p>
+      
+      <p><strong>Note:</strong> It sounds stupid that quartz crystals are used because if can produce a signal that is exactly 32678Hz why not just use that directly, but it is difficult to do so exactly, quartz’s resonant frequency is the “default” frequency, so it “prefers” vibrating at that, even tho it is not exactly the frequency provided. So in a way the quartz crystal corrects the signal to make it rly close to 326768HZ.</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/QuartzResonanceCorrection.gif" alt="QuartzResonanceCorrection" class="content-image">
+
+      <h2>How about normal clocks/watches?</h2>
+      <h3>*There are two types of watches, quartz and mechanical, I’ll keep mechanical watches for another explainer*</h3>
+      
+      <h3>How does a Quartz watch work:</h3>
+      
+      <p>Similar to the concept used in atomic clocks, the piezoelectric effect is used, but it is obviously a lot less accurate,  the resonant frequency of the crystal is 32768Hz, which is exactly 2^15, this is because it is an easy frequency to generate using mass manufactured quartz crystal, other values can be used but this is extremely common… now this signal looks like this:</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/512HzSignal.png" alt="512HzSignal" class="content-image">
+
+      <br>
+      <p>This signal is input into a series of flip flops (To be explained as part of another explainer), the frequency is halved each time it goes through one, since 32678=2^15, it shall be halved 15 times to reach exactly 1Hz. Here’s a demonstration:</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/FlipFlopFrequencyReduction.png" alt="FlipFlopFrequencyReduction" class="content-image">
+      
+      <p>This is repeated until this is the signal (A 1Hz square wave):</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/1HzSquareWave.png" alt="1HzSquareWave" class="content-image" style="width: 40%; height: auto;">
+
+      
+      <p>This signal is then connected a stepper motor (the coil in the diagram) which rotates by a small, known, amount which is connected to a seconds hand, gears with the ratio 60:1 (or any combination that simplifies to 60:1) reduce the rotation to once every 60 “Seconds” and that becomes the minute hand, and then more gears with 60:1 gear ratio rotate the hour hand once ever 3600 rotations of the seconds hand. Aka every hour</p>
+      <p><em>Really nice demonstrations</em></p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/QuartzMovementGears.jpg" alt="QuartzMovementGears" class="content-image">
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/GearRatioConversionsQuartz.gif" alt="GearRatioConversionsQuartz" class="content-image" style="max-width: 50%; height: auto;">
+      <p><em>This might demonstrate how the gears slow down the minute and hour hands</em></p>
+      
+      <p>The difference in the number of “teeth” on a gear is what reduces the torque/moment</p>
+      
+      <h2>How about the world time system?</h2>
+      
+      <p>The earth orbits in an uneven and elliptical orbit, this makes a year not exactly 365 days and therefore a day not exactly 24 hours (aka not exactly 24*60*60= 86400seconds), but its rather a bit higher or lower depending on the position of the earth at that time of year. So a bunch of nerds decided that the only way we can make standardized time is if we calculate average, so they made  Greenwich Mean Time (GMT), why Greenwich, a town in london you would say? Politics, they’re just the UK. Either way they got a flat map of the earth and split it into 24, unequal lines (Because of borders, aka more politics), where ideally each line covers 15 degrees of longitude. The map is as follows:</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/GMTZones.png" alt="GMTZones" class="content-image">
+
+      <br>
+
+      <h2>How is time accurately sent to different devices (whether computers, GPS or any other device) given that there is a delay between the time sent and the time recieved?</h2>
+      
+      <p>Well, we have a bunch of satellites that carry atomic clocks, all of them are constantly orbiting earth, All of which constantly send out their current tine and position around earth. You need 4 satellites to accurately determine time. Here is why:</p>
+      
+      <ul style="list-style-position: inside;">
+        <li><strong>1st satellite:</strong> Shows the direct distance between the device and the satellite, it basically shows the bounds of a sphere that you might be located at.</li>
+        <li><strong>2nd satellite:</strong> Acts as a second “sphere” and where the spheres from satellite 1 and 2 intersect, a circle is formed, you are in that circle.</li>
+        <li><strong>3rd satellite:</strong> The third sphere narrows it down to 2 intersection points between the 3 spheres, one of which is out of is usually out of earth so the actual x, y, z position can then be determined.</li>
+        <li><strong>4th satellite:</strong> the first 3 satellites all use the devices internal clock (which becomes less accurate overtime) to calculate distance (therefore the distance is slightly off). So the 4th satellite sends its time, and this time is compared to the time in the clock, it is used to recalculate the distance and then it is compared to the previous distances. This allows for an accurate calculation of the difference between real (satellite time) and inaccurate device time, the device now recalibrates its time and thus the time is known.</li>
+      </ul>
+      
+      <p><strong>Note:</strong> Speed = Distance/Time, Speed is known as all radio waves travel at the speed of light</p>
+      
+      <p>Picture demonstrations to visualize:</p>
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/GPSSatelliteDemo1.jpg" alt="GPSSatelliteDemo1" class="content-image">
+      <img src="/SubdirectoryPagesStructure/Images/HowTimeIsKept/GPSSatelliteDemo2.png" alt="GPSSatelliteDemo2" class="content-image">
+
+      <p><em>(the 4th satellite is missing because it just sends time)</em></p>
+      
+    </div>
+  </div>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e5e8527432d42be9e8d6862d1a95bf6"}'></script>
+</body>
+</html>
